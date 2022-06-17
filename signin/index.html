@@ -26,6 +26,7 @@
   <link href="https://fonts.googleapis.com/css2? display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="../css/commom.css"/>
+  <link rel="stylesheet" href="../css/signin.css"/>
 
   
   <script defer src="../js/common.js"></script>
@@ -364,7 +365,28 @@
   </header>
 
   <section class="signin">
-
+    <h1>로그인</h1>
+    <div class="signin__card">
+      <h2>
+        <strong>Welcome!</strong> 스타벅스에 오신 것을 환영합니다.  <!--strong태그는 인라인 요소로 좀 강하게 표현하고자 하는 그냥 표시임-->
+      </h2>
+      <form>
+        <input type="text" placeholder="아이디를 입력하세요."/>
+        <input type="password" placeholder="비밀번호를 입력하세요."/>
+        <input type="submit" value="로그인"/>  
+        <!-- submit은 뭔가를 제출하라는 의미를 지녔다고 보면 됨 
+        여기에서는 즉 아이디 페스워드를 서버로 제출한다는 것임-->
+        <p>
+          *비밀번호를 타 사이틀와 같이 사용할 경우 도용 위험이 있으니,<br/>
+          정기적으로 비밀번호를 변경하세요!
+        </p> 
+      </form>
+      <div class="actions">
+        <a href="javascript:void(0)">회원가입</a>
+        <a href="javascript:void(0)">아이디 찾기</a>
+        <a href="javascript:void(0)">비밀번호 찾기</a>
+      </div>
+    </div>
   </section>
 
   <!-- footer -->
